@@ -1,0 +1,10 @@
+<header>
+    <app-navbar></app-navbar>
+</header>
+<router-outlet></router-outlet>
+<footer>
+    <div class="fixed-bottom">
+        <small *ngIf="!loginService.isLoggedIn()" class="bg-light">&#169; copyright- Kitchen_Story.</small>
+        <small *ngIf="loginService.isLoggedIn()" class="bg-light">&#169; copyright- Kitchen_Story.</small>
+    </div>
+</footer>
